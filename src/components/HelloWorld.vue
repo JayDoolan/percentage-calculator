@@ -29,13 +29,9 @@
         <div class="float-left bg-gray-900 block w-full"></div>
         <div class="float-left p-3 text-white text-sm">
 
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick" />
-              <input type="hidden" name="hosted_button_id" value="8GLRCJJTZCMSA" />
-              <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-              <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
-              </form>
-
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8GLRCJJTZCMSA">
+                <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" />
+              </a>
         </div>
       </div>
     </div>
@@ -48,7 +44,7 @@
 
 
     <div class="flex content-center justify-center container mx-auto mt-6 mb-6">
-      <img src="@/assets/logo.png" width="200" height="50" class="block" />
+      <img src="@/assets/img/logo.png" width="200" height="50" class="block" />
     </div>
     
 
@@ -57,14 +53,14 @@
     <div class="flex mb-4">
       <div class="w-1/3">
 
-        <label class="text-md text-gray-600 inline-block mr-1">What is</label>
+        <label class="text-md text-gray-600 inline-block mr-1">What &nbsp;is</label>
 
         <input type="number" v-model="percentage" class="w-16 m-0 inline-block border py-1 px-3 mt-2 mb-2 text-md font-bold text-gray-600 focus:outline-none hover:border-gray-400 focus:border-gray-500 focus:bg-gray-100 ml-0 sm:ml-2" /> 
 
       </div>
       <div class="w-1/3">
 
-        <span class="text-md text-gray-600">&#37; of</span>
+        <span class="text-md text-gray-600">&#37;&nbsp; of</span>
 
         <input type="number" v-model="price" class="w-20 m-0 ml-1 inline-block border py-1 px-3 mt-2 mb-2 text-md font-bold text-gray-600 focus:outline-none hover:border-gray-400 focus:border-gray-500 focus:bg-gray-100 ml-0 sm:ml-2" />
 
@@ -82,12 +78,12 @@
     <div class="flex mb-4">
       <div class="w-1/3 text-gray-600 text-md">
 
-        <input type="number" v-model="percentage2" class="w-16 m-0 inline-block border py-1 px-3 mt-2 mb-2 text-md font-bold text-gray-600 focus:outline-none hover:border-gray-400 focus:border-gray-500 focus:bg-gray-100" /> &nbsp; is what
+        <input type="number" v-model="percentage2" class="w-16 m-0 inline-block border py-1 px-3 mt-2 mb-2 text-md font-bold text-gray-600 focus:outline-none hover:border-gray-400 focus:border-gray-500 focus:bg-gray-100" /> &nbsp; is &nbsp; what
 
       </div>
       <div class="text-gray-600 w-1/3 text-md">
 
-        % of <input type="number" v-model="price2" class="w-20 m-0 ml-1 inline-block border py-1 px-3 mt-2 mb-2 text-md font-bold text-gray-600 focus:outline-none hover:border-gray-400 focus:border-gray-500 focus:bg-gray-100 mr-2" />
+        % &nbsp; of <input type="number" v-model="price2" class="w-20 m-0 ml-1 inline-block border py-1 px-3 mt-2 mb-2 text-md font-bold text-gray-600 focus:outline-none hover:border-gray-400 focus:border-gray-500 focus:bg-gray-100 mr-2" />
 
       </div>
       <div class="w-1/3 pl-0 sm:pl-8">
@@ -105,25 +101,17 @@
 
 
 
- <label class="text-xl text-gray-600 block mb-2 mr-2">Donate:</label>
+ <label class="text-md text-gray-600 block mb-2 mr-2">Like Our Site? Support Us</label>
 
-        <button
-          v-on:click="modal = !modal"
-          type="button"
-          class="rounded bg-white text-gray-500 hover:text-gray-600 focus:outline-none text-xs h-12 text-center w-12 mr-1"
-          accesskey=""
-        >
+    <button
+          v-on:click="modal = !modal" type="button" class="rounded bg-white text-gray-500 hover:text-gray-600 focus:outline-none text-xs h-12 text-center w-12 mr-1" accesskey="">
           <i class="fa fa-bitcoin fa-2x"></i>
-        </button>
+    </button>
 
-     <button
-          v-on:click="modal2 = !modal2"
-          type="button"
-          class="rounded bg-white text-gray-500 hover:text-gray-600 focus:outline-none text-xs h-12 text-center w-12"
-          accesskey=""
-        >
+    <button
+          v-on:click="modal2 = !modal2" type="button" class="rounded bg-white text-gray-500 hover:text-gray-600 focus:outline-none text-xs h-12 text-center w-12" accesskey="">
           <i class="fa fa-cc-paypal fa-2x"></i>
-        </button>
+    </button>
 
 
 
@@ -172,6 +160,24 @@ export default {
   }
 }
 </script>
+
+<!-- Statcounter code for Percentageonline.com
+https://percentageonline.com -->
+<script type="text/javascript">
+var sc_project=12044834; 
+var sc_invisible=1; 
+var sc_security="446e1f9f"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12044834/0/446e1f9f/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></a></div></noscript>
+<!-- End of Statcounter Code -->
 
 <style scoped>
 </style>
