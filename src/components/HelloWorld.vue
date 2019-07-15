@@ -68,7 +68,7 @@
       <div class="w-1/3 pl-0 sm:pl-8">
 
         <label class="text-sm font-bold text-gray-600 block">Answer:</label>
-        <h3 class="inline-block text-1xl font-bold text-gray-800 whitespace-pre-line">{{answer}}&#37;</h3>
+        <h3 class="inline-block text-1xl font-bold text-gray-800 whitespace-pre-line">{{answer}}</h3>
 
       </div>
     </div>
@@ -89,7 +89,7 @@
       <div class="w-1/3 pl-0 sm:pl-8">
 
         <label class="text-sm font-bold text-gray-600 block">Answer:</label>
-        <h3 class="inline-block text-1xl font-bold text-gray-800 whitespace-pre-line">{{answer2}}&#37;</h3>
+        <h3 class="inline-block text-1xl font-bold text-gray-800 whitespace-pre-line">{{answer2}}&nbsp;&#37;</h3>
 
       </div>
     </div>
@@ -155,7 +155,7 @@ export default {
     },
     answer2() {  
       // return parseInt(this.price).toFixed(0) * parseInt(this.percentage / 100);
-      return (100 / this.price2 * (this.percentage2)).toFixed(3);
+      return (100 / this.price2 * (this.percentage2)).toFixed(2);
     }
   }
 }
