@@ -161,23 +161,5 @@ export default {
 }
 </script>
 
-<!-- Statcounter code for Percentageonline.com
-https://percentageonline.com -->
-<script type="text/javascript">
-var sc_project=12044834; 
-var sc_invisible=1; 
-var sc_security="446e1f9f"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - StatCounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/12044834/0/446e1f9f/1/"
-alt="Web Analytics Made Easy -
-StatCounter"></a></div></noscript>
-<!-- End of Statcounter Code -->
-
 <style scoped>
 </style>
