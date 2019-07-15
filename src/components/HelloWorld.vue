@@ -101,7 +101,7 @@
 
 
 
- <label class="text-md text-gray-600 block mb-2 mr-2">Like Our Site? Support Us</label>
+ <label class="text-md text-gray-600 block mb-2 mr-2 pb-2">Like Our Site? Support Us</label>
 
     <button
           v-on:click="modal = !modal" type="button" class="rounded bg-white text-gray-500 hover:text-gray-600 focus:outline-none text-xs h-12 text-center w-12 mr-1" accesskey="">
@@ -121,7 +121,7 @@
 <div class="flex content-center justify-center container mx-auto mt-6 p-8 sm:p-0">
  <div class="bg-white shadow-sm w-full sm:w-2/5 md:w-2/5 lg:w-2/5 xl:w-2/5 border-1 sm:border-0 p-0 sm:p-6 rounded block">
   <h1 class="text-gray-800 font-bold mb-3">Welcome to PercentageOnline.com</h1>
-  <p class="text-gray-600">This website was built as a way to instantly calculate percentage, wherever you may be in the world. Our website is fully 100% responsive so works on any device.</p>
+  <p class="text-gray-600 pb-6">Calculate percentages instantly in real time using our percentage calculator. This website was created using mobile first design, so works beautifully across all devices.</p>
 </div>
 </div>
 
